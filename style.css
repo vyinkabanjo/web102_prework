@@ -19,10 +19,22 @@ body {
     margin-top: -10px;
 }
 
+/**flex container**/
 .stats-container {
     display: flex;
+    align-items:center; 
+    justify-content:center;
+    /* flex-direction:column; */
+    /* padding-left: 32px;  */
+    /* flex-wrap:wrap; */
 }
 
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
+    cursor: pointer;
+}
+
+/**flex items**/
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
