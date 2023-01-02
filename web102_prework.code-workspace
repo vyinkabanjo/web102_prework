@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Documents/Web_Dev/practice_json"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "web102_prework"
+  }
+}
