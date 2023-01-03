@@ -34,11 +34,17 @@ GIF created with LiceCap!
 ## Notes
 
 - Figuring out how to use javascript's for loop feature to create a function that adds all data from the games array to the page was my first major challenge. I made use of for each and for in before realizing that for of was the optimal for method to use.
+
 - It took me a bit of time to fully grasp the idea behind filter and reduce in order to implement them and manipulate them, especially when coming up with a strategy for counting the number of unfunded games.
+
 - The ternary operator also stumped me for a few minutes, when trying to create a grammatically correct string that explained the number of unfunded games properly but was satisfying when I got it!
+
 - I ran into a couple struggles with CSS overall when figuring out how to manipulate flex box using features like flex grow and flex direction to structure the nav bar and home/stats sections in the exact way I wanted it. Using the '100vh' measurement to fill the page with my website's content was a really helpful hack that I hadn't prior been exposed to.
+
 - I struggled with understanding how to implement .gitignore; I still don't think I fully have the hang of it but I was able to ignore the DS_Store file and hope to practice using the git function more!
+
 - The smooth scroll functionality isn't fully where I want it to be yet; I haven't been able to debug yet why it isn't working like I had hoped it would. I tried using jQuery and javascript as an alternative method but I didn't understand exactly how to code worked so I decided to exclude it temporarily and come back to it.
+
 - I still intend to add in a functionality that will allow the user to search for a specific game they have heard of withouth having to scroll through the games section, but it is a task I put off before this submission in order to allow myself submit as early as possible to hopefully secure a place in the class.
 
 ## License
