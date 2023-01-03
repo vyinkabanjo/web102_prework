@@ -4,21 +4,39 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Cabin";
-  background-color: #758190;
-  padding: 0;
-  margin: 0;
+#page-container {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
-/* #nav-container {
-  float: right;
-  justify-content: flex-end;
-} */
+body {
+  font-family: "Cabin";
+  background-color: #fcfcfc;
+  /* background-color: #758190; */
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+#welcome-text {
+  font-size: 40px;
+  text-align: center;
+}
+
+#description-container {
+  text-align: center;
+  font-size: 30px;
+}
 
 nav {
+  position: fixed;
+  top: 0;
   display: flex;
-  background-color: lightblue;
+  background-color: black;
+  color: #fcfcfc;
   padding: 1%;
   align-items: center;
   width: 100%;
@@ -49,42 +67,75 @@ nav ul li {
 
 nav ul li:hover {
   scale: 1.15;
+  color: #758190;
+}
+
+a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 section {
-  /* make each section the same height as the page */
+  /* make each section the same height as the page, no matter how browser is sized */
+  /* em, px, rem, %, vh, vw, */
   min-height: 100vh;
-
   padding: 16px;
+  scroll-snap-align: center;
 }
 
-section.home {
+.home_section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 10%;
-  /* justify-content: center; */
+  gap: 20px;
 }
 
-/* .nav-icon {
-  height: 40px;
-  float: right;
+#down-arrow {
+  width: 80px;
+  margin-top: 150px;
+}
+
+#down-arrow:hover {
   cursor: pointer;
-  transition: all 0.3s;
+  scale: 1.02;
 }
 
-.nav-icon:hover {
-  scale: 1.1;
-} */
+.stats_section {
+  justify-content: center;
+  background-color: #ecedee;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.game-card h2 {
+  font-size: 25px;
+}
+section h2 {
+  font-size: 40px;
+}
+.game-card p {
+  font-size: 15px;
+}
+section p {
+  font-size: 25px;
+}
+
+.games_section {
+  justify-content: center;
+  /* scroll-behavior: smooth; */
+}
 
 /**flex container**/
 .stats-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction:column; */
-  /* padding-left: 32px;  */
-  /* flex-wrap:wrap; */
+  border-radius: 10px;
 }
 
 .stats-container:hover {
@@ -94,12 +145,20 @@ section.home {
 
 /**flex items**/
 .stats-card {
-  background-color: #a8b0bc;
+  background-color: #ffffff;
+  /* background-color: #a8b0bc; */
+  box-sizing: border-box;
+  border: 5px solid black;
   border-radius: 7px;
   padding: 1%;
   margin: 1%;
   width: 100%;
   text-align: center;
+  transition: all 0.3s;
+}
+
+.stats-card:hover {
+  scale: 1.05;
 }
 
 #num-contributions,
@@ -126,12 +185,16 @@ section.home {
   margin: 1%;
   width: 300px;
   text-align: center;
-  border-radius: 7px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: all 0.3s;
 }
 
 .game-card:hover {
   cursor: pointer;
   box-shadow: 0 0 30px lightblue;
+  scale: 1.05;
 }
 
 #button-container {
@@ -139,9 +202,19 @@ section.home {
 }
 
 button {
+  font-size: 18px;
   font-family: "Cabin";
   border: none;
   padding: 1%;
   margin: 1%;
-  border-radius: 7px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
