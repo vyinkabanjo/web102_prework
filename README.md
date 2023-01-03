@@ -17,15 +17,17 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] A nav bar is included at the top of the page with hyperlinks to the each of the The introduction (Home), Stats and Our Games sections such that if a user wants to use to get to the Our Games or Stats section quickly, without needing to scroll, they can.
-- [ ] A smooth scroll implemented using CSS improves the flow of the page between sections as the user navigates through the page.
-- [ ] Buttons and clickable text have additional CSS hover featurs that scale and/or change colors or cursor type when pointed at by a touchpad or mouse.
-- [ ] The overall color scheme of the website is altered from the original light blue and grey theme to a simpler, almost monotone, black and white so that the aesthetic of the website has a more contemporary and clean feel.
+- [x] A nav bar is included at the top of the page with hyperlinks to the each of the The introduction (Home), Stats and Our Games sections such that if a user wants to use to get to the Our Games or Stats section quickly, without needing to scroll, they can.
+- [x] A smooth scroll implemented using CSS improves the flow of the page between sections as the user navigates through the page.
+- [x] Buttons and clickable text have additional CSS hover featurs that scale and/or change colors or cursor type when pointed at by a touchpad or mouse.
+- [x] The overall color scheme of the website is altered from the original light blue and grey theme to a simpler, almost monotone, black and white so that the aesthetic of the website has a more contemporary and clean feel.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-<img src='https://imgur.com/TOdwWdK' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://i.imgur.com/qFFk5MH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='https://imgur.com/TOdwWdK' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 GIF created with LiceCap!
 
