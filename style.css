@@ -51,7 +51,22 @@ nav ul li:hover {
   scale: 1.15;
 }
 
-.nav-icon {
+section {
+  /* make each section the same height as the page */
+  min-height: 100vh;
+
+  padding: 16px;
+}
+
+section.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  /* justify-content: center; */
+}
+
+/* .nav-icon {
   height: 40px;
   float: right;
   cursor: pointer;
@@ -60,7 +75,7 @@ nav ul li:hover {
 
 .nav-icon:hover {
   scale: 1.1;
-}
+} */
 
 /**flex container**/
 .stats-container {
