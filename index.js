@@ -68,7 +68,6 @@ const contributionsCard = document.getElementById("num-contributions");
 const totalContributions = GAMES_JSON.reduce((sum, game) => {
   return sum + game.backers;
 }, 0);
-// console.log(totalContributions);
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
 contributionsCard.innerHTML = `${totalContributions.toLocaleString("en-US")}`;
